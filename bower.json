@@ -1,0 +1,21 @@
+{
+  "name": "ninja_app",
+  "authors": [
+    "giancarlosio <giancarlos.isasi@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/vendor/assets/bower_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}
