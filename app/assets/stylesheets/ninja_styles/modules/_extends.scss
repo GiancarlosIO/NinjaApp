@@ -1,0 +1,17 @@
+// Display extends
+
+%flex-row-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+%flex-column-container {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+%flex-center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
