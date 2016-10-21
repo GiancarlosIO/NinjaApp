@@ -12,6 +12,7 @@ gem 'puma', '~> 3.0'
 # front end gems
 gem 'sass-rails', '~> 5.0'
 gem 'jquery-rails'
+gem 'angular-rails-templates'
 gem 'haml-rails'
 
 # Use Uglifier as compressor for JavaScript assets
