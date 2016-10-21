@@ -1,1 +1,65 @@
-  
+.max-container {
+  margin: 0 20px;
+  .content {
+    min-width: 90vw;
+    padding: 30px 0;
+    @extend %flex-column-container;
+    @include e(column) {
+      width: 100%;
+      padding: 20px 0;
+      display: flex;
+      input.search {
+        border: 1.5px solid $blue-light;
+        width: 100%;
+        border-radius: 5px;
+        outline: none;
+        color: $grey;
+        padding: 10px;
+        font-size: $font-size--medium;
+        transition: 0.3s ease-in-out;
+        &:focus { border: 1px solid $red-light; }
+      }
+      ul {
+        width: 100%;
+        li {
+          color: $grey;
+          padding: 10px 5px;
+          font-size: $font-size--medium;
+          border-bottom: 1px solid $blue-light;
+          @extend %flex-row-container;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+      @include m(between) {
+        display: flex;
+        justify-content: space-between;
+      };
+      @include m('center') {
+        display: flex;
+        justify-content: center;
+      }
+      form {
+        padding: 20px 10px;
+        height: 200px;
+        width: 100%;
+        @extend %flex-column-container;
+        justify-content: space-around;
+        align-items: center;
+        input {
+          width: 80%;
+          outline: 0;
+          border: 1px solid $blue-light;
+          padding: 10px 8px;
+        }
+        input[type=submit] {
+          width: 60%;
+          background: white;
+          color: $grey;
+          border: 0;
+          box-shadow: 0 2px 10px rgba($black, 0.4);
+        }
+      }
+    };
+  }
+}
