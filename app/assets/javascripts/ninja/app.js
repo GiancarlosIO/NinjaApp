@@ -1,5 +1,6 @@
-( function(){
-  "use strict";
-  angular
-  .module('ninjaApp', ['templates']);
+(function() {
+    "use strict";
+    angular
+        .module('ninjaApp', ['ngRoute', 'templates'])
+        .config();
 })();
