@@ -16,7 +16,7 @@
           .span
             %span.belt{"class"=>"belt--{{ninja.belt}}"}
               {{ninja.belt}} belt
-            %span{"ng-click"=>"ninjas.remove(ninja)"}
+            %span.icon--button{"ng-click"=>"ninjas.remove(ninja)"}
               %i.fa.fa-trash
     .content__column.content__column--center
       %form{"ng-submit"=>"ninjas.createNinja()"}

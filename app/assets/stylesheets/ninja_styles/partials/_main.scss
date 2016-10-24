@@ -6,6 +6,16 @@
   align-items: center;
 }
 
+.icon {
+  @include m(button){
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: $white;
+  };
+}
+
 .max-container {
   margin: 0 20px;
   .content {
