@@ -17,4 +17,5 @@
 //= require angular-rails-templates
 //= require_tree ../templates
 //= require ninja/app
+//= require ninja/services/ninjas_services
 //= require ninja/controllers/ninjas_controller

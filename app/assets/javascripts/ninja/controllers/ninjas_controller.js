@@ -1,10 +1,12 @@
 (function() {
+  "use strict";
     angular.module('ninjaApp')
         .controller('NinjasController', NinjasController);
 
     // NinjasController.$inject = ['$http', '$location'];
+    NinjasController.$inject = ['ninjasService'];
 
-    function NinjasController() {
+    function NinjasController(ninjasService) {
         var vm = this;
         vm.orderNinjaBy = '';
         vm.data = [];
@@ -14,29 +16,16 @@
         vm.remove = remove;
         vm.createNinja = createNinja;
 
-        vm.data = [{
-                name: 'Yoshi',
-                belt: 'green',
-                rate: 50,
-                available: true
-            }, {
-                name: 'Crystal',
-                belt: 'yellow',
-                rate: 30,
-                available: true
-            }, {
-                name: 'Ryu',
-                belt: 'orange',
-                rate: 10,
-                available: false
-            }, {
-                name: 'Shaun',
-                belt: 'black',
-                rate: 1000,
-                available: true
-            }
+        // get the data for a promise
+        ninjasService.getNinjas()
+          .then(function(response){
+            vm.data = response.data;
+            console.log(response);
+            console.log(response.data);
+          }, function(err){
+            console.log('data not found')
+          });
 
-        ];
         vm.newNinja = {
             name: '',
             belt: '',
