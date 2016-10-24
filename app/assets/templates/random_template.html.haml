@@ -1,3 +1,5 @@
-%h1 {{title}}
-%p
-  {{ninjas[random].name}}
+.content__column.container__flex--center
+  %h1 {{title}}
+  .random{"ng-transclude"=>true}
+  %p
+    {{ninjas[random].name}}

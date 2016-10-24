@@ -10,6 +10,8 @@
         ninjas: '=',
         title: '='
       },
+      transclude: true,
+      replace: true,
       templateUrl: 'random_template.html',
       controller: function($scope) {
         $scope.random = Math.floor(Math.random() * 4);

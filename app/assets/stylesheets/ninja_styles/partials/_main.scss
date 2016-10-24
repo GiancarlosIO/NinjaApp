@@ -1,7 +1,7 @@
 .text--center { text-align: center; }
 .container__flex--center {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
