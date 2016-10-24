@@ -1,26 +1,4 @@
-.max-container{"ng-controller"=>"NinjasController as ninjas"}
+.max-container
   %section.content
-    .content__column.content__column--between
-      %button.btn.btn--medium.btn--blue{"ng-click"=>"ninjas.orderByName()"}
-        Order by Name
-      %button.btn.btn--medium.btn--red{"ng-click"=>"ninjas.orderByRate()"}
-        Order by Rate
-    .content__column
-      %input.search{"type"=>"text", "placeholder"=>"Search a ninja for his name", "ng-model"=>"ninjas.search"}
-    .content__column
-      %ul
-        %li.ninja{"ng-repeat"=>"ninja in ninjas.data | orderBy: ninjas.orderNinjaBy | filter: ninjas.search", "ng-show"=>"ninja.available"}
-          .span
-            {{ninja.name}} - {{ninja.rate}}
-            %i.fa.fa-star
-          .span
-            %span.belt{"class"=>"belt--{{ninja.belt}}"}
-              {{ninja.belt}} belt
-            %span{"ng-click"=>"ninjas.remove(ninja)"}
-              %i.fa.fa-trash
-    .content__column.content__column--center
-      %form{"ng-submit"=>"ninjas.createNinja()"}
-        %input{"type"=>"text", "placeholder"=>"name", "ng-model"=>"ninjas.newNinja.name"}
-        %input{"type"=>"text", "placeholder"=>"belt", "ng-model"=>"ninjas.newNinja.belt"}
-        %input{"type"=>"number", "placeholder"=>"rate", "ng-model"=>"ninjas.newNinja.rate"}
-        %input{"type"=>"submit", "value"=>"Add a new ninja"}
+    %h1
+      HOME PAGE!
