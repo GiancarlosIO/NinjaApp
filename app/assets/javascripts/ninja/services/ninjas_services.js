@@ -10,6 +10,7 @@
       getNinjas : getNinjas
     };
     function getNinjas() {
+      // getting data for public folder (refactor)
       return $http.get('/ninjas.json');
     };
   };
