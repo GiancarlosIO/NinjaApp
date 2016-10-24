@@ -4,9 +4,12 @@
         .module('ninjaApp', ['ngRoute', 'templates', 'ngAnimate'])
         .config(configApp);
 
-    configApp.$inject = ['$routeProvider'];
+    configApp.$inject = ['$routeProvider', '$locationProvider'];
 
-    function configApp($routeProvider) {
+    function configApp($routeProvider, $locationProvider) {
+
+      $locationProvider.html5Mode(true);
+
       $routeProvider
         .when('/home', {
           templateUrl: 'home_template.html',
