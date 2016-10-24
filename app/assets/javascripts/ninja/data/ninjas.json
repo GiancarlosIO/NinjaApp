@@ -12,7 +12,7 @@
 	"name": "Ryu",
 	"belt": "orange",
 	"rate": 10,
-	"available": false
+	"available": true
 }, {
 	"name": "Shaun",
 	"belt": "black",

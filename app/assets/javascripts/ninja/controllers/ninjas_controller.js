@@ -15,11 +15,15 @@
         vm.orderByRate = orderByRate;
         vm.remove = remove;
         vm.createNinja = createNinja;
+        vm.removeAll = removeAll;
+        vm.noData= false;
+        vm.dataCount;
 
         // get the data for a promise
         ninjasService.getNinjas()
           .then(function(response){
             vm.data = response.data;
+            vm.dataCount = response.data.length;
           }, function(err){
             console.log('data not found')
           });
@@ -54,6 +58,12 @@
             vm.newNinja.name = '';
             vm.newNinja.belt = '';
             vm.newNinja.rate = 0;
-        }
+            vm.noData = false;
+        };
+
+        function removeAll(){
+          vm.data = [];
+          vm.noData = true;
+        };
     };
 })();

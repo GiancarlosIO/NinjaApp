@@ -1,0 +1,41 @@
+// Animations with angular
+main.ng-enter {
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  &.ng-enter-active {
+    opacity: 1;
+  }
+}
+
+.ninja {
+  &.ng-enter {
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(30px);
+    &.ng-enter-active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  &.ng-leave {
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+    transform: translateX(0);
+    &.ng-leave-active {
+      opacity: 0;
+      transform: translate(-100%);
+    }
+  }
+  &.ng-leave-stagger {
+    transition-delay: 0.2s;
+    transition-duration: 0;
+  }
+}
+
+.no-ninjas {
+  opacity: 1;
+  &.ng-hide {
+    opacity: 0;
+    transition-duration: 0.1s !important;
+  }
+}

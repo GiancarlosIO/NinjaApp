@@ -44,4 +44,7 @@
   @include m('black') {
     background: rgba(black,.7);
   }
+  @include m('orange') {
+    background: rgba(orange,.7);
+  }
 }

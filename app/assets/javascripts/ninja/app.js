@@ -1,7 +1,7 @@
 (function() {
     "use strict";
     angular
-        .module('ninjaApp', ['ngRoute', 'templates'])
+        .module('ninjaApp', ['ngRoute', 'templates', 'ngAnimate'])
         .config(configApp);
 
     configApp.$inject = ['$routeProvider'];
