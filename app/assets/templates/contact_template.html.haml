@@ -1,0 +1,17 @@
+.max-container
+  %section.content
+    .content__column.content__column--center
+      %form{"name"=>"contactForm", "ng-submit"=>"contact.sendMessage()"}
+        %input{"type"=>"text", "placeholder"=>"name", "name"=>"name", "ng-required"=>"true", "ng-model"=>"contact.message.name"}
+        .form__error{"ng-show"=>"contactForm.name.$touched && contactForm.name.$invalid"}
+          %small{"style"=>"color:red;text-align:center;display:block"}
+            Insert your name
+        %input{"type"=>"email", "name"=>"email", "placeholder"=>"email", "ng-required"=>"true", "ng-model"=>"contact.message.email"}
+        .form__error{"ng-show"=>"contactForm.email.$touched && contactForm.email.$invalid"}
+          %small{"style"=>"color:red;text-align:center;display:block"}
+            Insert your email
+        %textarea{"placeholder"=>"Your message", "name"=>"message", "ng-required"=>"true", "ng-model"=>"contact.message.message"}
+        .form__error{"ng-show"=>"contactForm.message.$touched && contactForm.message.$invalid"}
+          %small{"style"=>"color:red;text-align:center;display:block"}
+            Insert your message
+        %input{"type"=>"submit", "value"=>"Send", "ng-disabled"=>"contactForm.$invalid"}

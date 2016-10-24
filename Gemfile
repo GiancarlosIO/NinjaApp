@@ -24,8 +24,8 @@ gem 'coffee-rails', '~> 4.2'
 
 # ES6
 
-gem 'sprockets', '~> 4.0.0.beta4'
-gem 'babel-transpiler'
+gem 'sprockets', '~> 3.7'
+# gem 'babel-transpiler'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'

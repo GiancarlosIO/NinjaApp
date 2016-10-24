@@ -6,7 +6,7 @@
   color: $white;
   background: $red-light;
   @include e(row) {
-    width: 260px;
+    width: auto;
     ul {
       list-style: none;
       @extend %flex-row-container;
