@@ -20,8 +20,6 @@
         ninjasService.getNinjas()
           .then(function(response){
             vm.data = response.data;
-            console.log(response);
-            console.log(response.data);
           }, function(err){
             console.log('data not found')
           });

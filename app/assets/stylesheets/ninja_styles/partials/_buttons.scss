@@ -27,7 +27,7 @@
 .belt {
   padding: 8px 10px;
   color: white;
-  border-radius: 50%;
+  border-radius: 10px;
   margin-right: 20px;
   @include m('red') {
     background: rgba(red, 0.7);

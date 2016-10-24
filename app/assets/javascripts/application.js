@@ -18,4 +18,5 @@
 //= require_tree ../templates
 //= require ninja/app
 //= require ninja/services/ninjas_services
+//= require ninja/directives/ninja_directives
 //= require ninja/controllers/ninjas_controller
