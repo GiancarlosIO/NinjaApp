@@ -7,4 +7,4 @@ I use:
 <br/>
 *BEM for classes names
 <br/>
-*Style guide of: https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md
+*Style guide of John Papa: https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md
