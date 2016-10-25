@@ -1,24 +1,5 @@
 # README
+This is a simple rails application made following the tutorial of ninja guy: https://www.youtube.com/playlist?list=PL4cUxeGkcC9gsJS5QgFT2IvWIX78dV3_v 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*BEM for classes names
+*Style guide of: https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md
