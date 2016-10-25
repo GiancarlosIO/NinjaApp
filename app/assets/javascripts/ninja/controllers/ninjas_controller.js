@@ -44,6 +44,7 @@
         }
 
         function remove(ninja) {
+            vm.noData = vm.data.length == 1 ? true : false
             let ninjaToRemove = vm.data.indexOf(ninja);
             vm.data.splice(ninjaToRemove, 1);
         };
