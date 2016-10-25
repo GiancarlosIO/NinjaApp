@@ -5,6 +5,10 @@ I use:
 <br/>
 *Rails framework
 <br/>
-*BEM for classes names
+*SASS
+<br/>
+*HAML
+<br/>
+*BEM for css classes names
 <br/>
 *Style guide of John Papa: https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md
